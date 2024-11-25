@@ -1,6 +1,6 @@
-﻿namespace JustMyService.Weather;
+﻿using JustMyService.Weather;
 
-public interface ыва
+public interface IWeatherServiceFactory
 {
-    
+    IWeatherService CreateWeatherService(string service);
 }
