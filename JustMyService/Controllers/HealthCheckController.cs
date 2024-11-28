@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 
 namespace JustMyService.Controllers
 {
@@ -9,7 +10,7 @@ namespace JustMyService.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(new { Status = "Healthy", Timestamp = DateTime.UtcNow });
+            return Ok(new { Status = "Healthy", Timestamp = DateTime.Now });
         }
     }
 }
